@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+
+    "target": "ES2015",
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"sourceMap": true,
+		"strict": true,
+		"experimentalDecorators": true,
+		"rootDir": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "@Lib/*": ["./lib/*"],
+      "@Routes/*": ["./routes/*"],
+      "@Services/*": ["./services/*"],
+    },
+    "types": [
+			"@types/node",
+			"@types/cors",
+			"@types/express"
+    ],
+  }
+}
